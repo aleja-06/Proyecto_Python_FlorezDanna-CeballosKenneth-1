@@ -1,5 +1,14 @@
 from mas.funciones import *
 
+def menu_roles():
+    clear_screen()
+    print("----------Menú De Roles----------")
+    print("1. Coordinador")
+    print("2. Trainer")
+    print("3. Salir")    
+    opc=verify_opc("Porfavor digite su opcion: ",1,7)
+    return opc  
+    
 def menu_principal():
     clear_screen()
     print("----------Menú Principal----------")
@@ -10,8 +19,6 @@ def menu_principal():
     print("5. Configuracion Matriculas")
     print("6. Configuracion Reportes") 
     print("7. Salir del programa")
-    opc=verify_opc("Porfavor digite su opcion: ",1,7)
-    return opc
         
 def menu_campers():
     print("----------Menú Campers----------")
